@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0; 
+
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.slider{
+    width:100%;
+    min-height: 80vh;
+    aspect-ratio: 16/9;
+    background: black;
+    position: relative;
+}
+
+.slider-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.slider-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center ;
+    }
+h1{
+    color: white;
+    font-size:4rem;
+
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom:100px;
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 1.5em;
+
+}
+
+.slider-content p{
+    color: white;
+    font-size:3rem;
+    font-weight:300;    
+}
+
+
+.section{
+    padding: 100px 0;
+}
+
+.boxed{
+    max-width:1280px;
+    margin-inline:auto;
+}
+
+.flex{
+    display:flex;
+}
+
+.dark{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/slider.jpg);
+    background-size: cover;
+    /* background:#000; */
+    background-position-x: 50%;
+    color: #fff;
+
+}
+.w40{
+    width:40%;
+}
+
+.w60{
+    width:60%;
+    text-align: justify;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.w25{
+    width:25%; #met a problem here
+}
+
+.w32{
+    width: 32%;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.gap20{
+    gap:20px;
+}
+
+.wrap{
+    flex-wrap:wrap ;
+
+}
+
+.skill{
+    background:#fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.skill img{
+    width:100px;  
+    height:100px;  
+    aspect-ratio:1/1;
+    object-fit: contain;
+}
+
+.skill h3{
+    color: #000;
+    margin-top: 10px;
+}
+
+
+.achievements{
+    height: auto;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+
+.achievements h3{
+    position: relative;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: max-content;
+    opacity: 0;
+    transition: 0.4s ease ;
+    
+}
+
+
+.achievements a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.achievements img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+    transition: .4s ease;
+}
+
+.achievements:hover img{
+    filter: brightness(60%);
+}
+
+.achievements:hover h3{
+    opacity: 1;
+}
+
+.icon{
+    display: block;
+    font-size: 40px !important;
+}
+
+
+.label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+.value{
+    display: block;
+}
+
+.contact{
+    border: 2px dashed #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+}
