@@ -107,7 +107,8 @@ p{
 }
 
 .wrap{
-    flex-wrap:wrap ;
+    flex-wrap:wrap;
+	justify-content: center;
 
 }
 
